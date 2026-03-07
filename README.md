@@ -123,15 +123,7 @@ This project is executed in **5 phases**, each containing a set of clear deploym
     Replace <db_password> with your password created in the previous task.
    
 4. Click on **Save & Connect**
-5. In the **Connections** tab on the Left sidebar, hover the mouse on the cluster name, then click on **+** to **Create database**
-
-    <img width="329" height="272" alt="image" src="https://github.com/user-attachments/assets/abc05e04-a167-4b62-b0d1-a7d2311b8f44" />
-
-6. Enter the Database details, **Database Name, Collection Name** then click on **Create Database**
-
-    <img width="609" height="480" alt="image" src="https://github.com/user-attachments/assets/7ca63b8a-8993-494a-9062-59a6d31452be" />
-
-7. Save your MongoDB Connection URI, as this may be required for further configuration.
+5. Save your MongoDB Connection URI, as this may be required for further configuration.
 
 ---
 
