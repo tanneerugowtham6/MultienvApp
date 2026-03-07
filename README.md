@@ -2,6 +2,12 @@
 
 ---
 
+This project is a Containerized Full-Stack Application designed to demonstrate a modern DevOps workflow. It simulates a real-world scenario where a single application must coexist in two different states: Development (Dev) and Production (Prod).
+
+The primary goal is to provide a unified React Frontend that can interact with two distinct Flask Backend environments, all managed through Docker Orchestration.
+
+---
+
 ## Project Execution Overview
 
 This project is executed in **5 phases**, each containing a set of clear deployment tasks required to fully host and scale the Travel Memory MERN application on AWS.
