@@ -169,8 +169,56 @@ This project is executed in **5 phases**, each containing a set of clear deploym
 
     Refer `dockerfile` file from the `frontend` folder in this repository.
 
-    
-7. dca
-8. ds
-9. vds
-10. v
+    <img width="348" height="196" alt="image" src="https://github.com/user-attachments/assets/fcd613cb-c418-4ad3-90e4-877699e80f04" />
+
+---
+
+## Phase 3: Orchestration & Networking
+
+1. Go to the root directory 'MultienvApp', create a Docker Compose file for frontend deployment
+
+   ```
+   cd /MultienvApp
+   ```
+
+   Refer `docker-compose.yml` file in this repository.
+
+   <img width="382" height="840" alt="image" src="https://github.com/user-attachments/assets/74d5b9f3-2ae0-4a2d-a594-7ada231b2fa5" />
+
+---
+
+## Phase 4: Application Deployment
+
+1. Execute the `docker-compose.yml` file
+
+   <img width="1214" height="449" alt="image" src="https://github.com/user-attachments/assets/5703c0d2-aa4e-46ae-8f38-7ee026758304" />
+
+   <img width="1214" height="157" alt="image" src="https://github.com/user-attachments/assets/b2c32563-b108-49b2-97e4-a87874fb652b" />
+
+2. Verify all the services
+
+   ```
+   docker-compose ps
+   ```
+
+   <img width="1214" height="157" alt="image" src="https://github.com/user-attachments/assets/ccaf91ed-a30e-42c8-8309-002d26b3a10e" />
+
+---
+
+## Phase 5: Verification & Testing
+
+1. Validate `Backend - Development` by visiting `http://localhost:3001/`
+
+   <img width="1626" height="662" alt="image" src="https://github.com/user-attachments/assets/603f696b-037d-4ef9-9221-27fa57108240" />
+   
+2. Validate `Backend - Production` by visiting `http://localhost:3002/`
+
+   <img width="1626" height="662" alt="image" src="https://github.com/user-attachments/assets/c4adb916-1f94-4131-b529-7f96da150bdb" />
+
+3. Validate `Frontend` by visiting `http://localhost:3000/`
+
+   <img width="1626" height="662" alt="image" src="https://github.com/user-attachments/assets/8a5544f3-68c5-488c-9850-6f94716f7f1a" />
+
+   <img width="1710" height="521" alt="image" src="https://github.com/user-attachments/assets/dad372f4-c1b2-49db-b18b-30699b013a50" />
+
+   <img width="1710" height="521" alt="image" src="https://github.com/user-attachments/assets/043d1e30-e7fa-483e-a4c8-ca771ce13562" />
