@@ -29,22 +29,16 @@ multienv/
 
 ### Backend Development Environment (.env)
 ```
-PORT=5001
+PORT=3001
 MONGO_URI=your_dev_mongodb_uri
 ```
 
 ### Backend Production Environment (.env)
 ```
-PORT=5002
+PORT=3002
 MONGO_URI=your_prod_mongodb_uri
 ```
 
-### Frontend Environment (.env)
-```
-PORT=5000
-DEV_DB_URI=your_dev_mongodb_uri
-PROD_DB_URI=your_prod_mongodb_uri
-```
 
 
 ### Requirements
@@ -65,9 +59,9 @@ docker-compose up
 
 ## Accessing the Application
 
-- Frontend: http://localhost:5000/
-- Development Environment: http://localhost:5000/dev
-- Production Environment: http://localhost:5000/prod
+- Frontend: http://localhost:3000/
+- Development Environment: http://localhost:3001/dev
+- Production Environment: http://localhost:3002/prod
 
 
 
