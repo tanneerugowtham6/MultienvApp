@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  backend-dev:
+    build:
+      context: ./backend/dev
+      dockerfile: dockerfile
+    ports:
+      - 3001:3001
+    env_file:
+      - ./backend/dev/.env
+    volumes:
+      - ./backend/dev:/app
+    networks:
+      - tms-net
+  backend-prod:
+    build:
+      context: ./backend/prod
+      dockerfile: dockerfile
+    ports:
+      - 3002:3002
+    env_file:
+      - ./backend/prod/.env
+    volumes:
+      - ./backend/prod:/app
+    networks:
+      - tms-net
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend-dev
+      - backend-prod
+    networks:
+      - tms-net
+networks:
+  tms-net:
+    driver: bridge
